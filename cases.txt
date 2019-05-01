@@ -1,0 +1,80 @@
+Test cases are:
+
+badarg1:
+	prog2 -nosuch
+
+badarg2:
+	prog2 -v -badarg empty.txt
+
+spacesfile:
+	prog2 -v spaces.txt
+
+stringbad1:
+	prog2 badstr.txt
+
+emptyfile:
+	prog2 empty.txt
+
+stringbad2:
+	prog2 -v badstr.txt
+
+toomanyfile:
+	prog2 good.txt noSuchFile
+
+badfile:
+	prog2 noSuchFile
+
+items4:
+	prog2 -strings -ids -ids < items4
+
+items1:
+	prog2 -v -ids items1
+
+items2:
+	prog2 -ids -v < items2
+
+items3:
+	prog2 -ids items3
+
+err5:
+	prog2 err5
+
+err4:
+	prog2 -strings err4
+
+err3:
+	prog2 err3
+
+err2:
+	prog2 -v err2
+
+err1:
+	prog2 err1
+
+mix4:
+	prog2 -v mix4
+
+mix5:
+	prog2 -ids mix5
+
+mix2:
+	prog2 < mix2
+
+mix3:
+	prog2 mix3
+
+stringesc:
+	prog2 -strings -v stringesc
+
+comments:
+	prog2 -v comments
+
+mix1:
+	prog2 mix1
+
+stringok:
+	prog2 -strings strings.txt
+
+sharpinstring:
+	prog2 -v sharpinstring
+
